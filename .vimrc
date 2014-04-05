@@ -1,6 +1,4 @@
-" ============================================================================
 " .vimrc of Anton Beloglazov
-" ============================================================================
 
 " ============================================================================
 " Plugins
@@ -149,6 +147,7 @@ Plug 'Julian/vim-textobj-brace'
 Plug 'kana/vim-textobj-function'
 
 Plug 'beloglazov/vim-textobj-quotes'
+onoremap q iq
 
 Plug 'Julian/vim-textobj-variable-segment'
 
