@@ -87,7 +87,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 
-
 " ----------------------------------------------------------------------------
 " Movement
 " ----------------------------------------------------------------------------
@@ -648,6 +647,7 @@ nnoremap <leader>vs :source $MYVIMRC<CR>i<Esc>
 " ============================================================================
 " Java key bindings (eclim)
 " ============================================================================
+
 autocmd FileType java nnoremap <localleader>o :CtrlP src<CR>
 autocmd FileType java nnoremap <localleader>m :CtrlP src/main<CR>
 autocmd FileType java nnoremap <localleader>t :CtrlP src/test<CR>
