@@ -1,7 +1,7 @@
 # My Vim Configuration
 
 This Vim configuration includes a number of useful plugins managed by
-(vim-plug)[https://github.com/junegunn/vim-plug]. The configuration can be
+[vim-plug](https://github.com/junegunn/vim-plug). The configuration can be
 sensibly used with or without installing the plugins.
 
 To install the configuration, run the following commands:
