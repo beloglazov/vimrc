@@ -403,6 +403,9 @@ let mapleader=" "
 
 " Allow unsaved changes when opening another file
 set hidden
+"
+" Disable swap files
+set noswapfile
 
 " Search with smart case
 set ignorecase
