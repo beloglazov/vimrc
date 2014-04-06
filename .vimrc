@@ -1,12 +1,17 @@
 " .vimrc of Anton Beloglazov
 
+
 " ============================================================================
-" Support fish shell
+" Early settings
 " ============================================================================
 
+" Support fish shell
 if &shell =~# 'fish$'
     set shell=sh
 endif
+
+" Leader key
+let mapleader=" "
 
 
 " ============================================================================
@@ -398,9 +403,6 @@ endif
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc nested source %
 
-" Leader key
-let mapleader=" "
-
 " Allow unsaved changes when opening another file
 set hidden
 "
@@ -415,7 +417,6 @@ set smartcase
 set gdefault
 
 " Share the system clipboard
-" set clipboard=unnamedplus
 if has('unnamedplus')
     set clipboard=unnamedplus
 else
