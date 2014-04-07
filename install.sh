@@ -12,3 +12,7 @@ curl --insecure -fL -o ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/
 ln -sf `pwd`/.vimrc ~/.vimrc
 
 vim +PlugInstall +qall
+
+cd ~/.vim/plugged/YouCompleteMe
+git submodule update --init --recursive
+./install.sh
