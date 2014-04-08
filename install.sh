@@ -16,3 +16,7 @@ vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 git submodule update --init --recursive
 ./install.sh
+
+cd ~/.vim/plugged/vimproc.vim
+make
+

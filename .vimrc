@@ -269,6 +269,8 @@ Plug 'dag/vim2hs'
 let g:haskell_autotags = 1
 let g:haskell_tags_generator = 'fast-tags'
 
+Plug 'Shougo/vimproc.vim'
+
 Plug 'eagletmt/ghcmod-vim'
 
 Plug 'eagletmt/neco-ghc'
