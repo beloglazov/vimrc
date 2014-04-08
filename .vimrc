@@ -161,7 +161,8 @@ Plug 'Julian/vim-textobj-brace'
 Plug 'kana/vim-textobj-function'
 
 Plug 'beloglazov/vim-textobj-quotes'
-onoremap q iq
+xmap q iq
+omap q iq
 
 Plug 'Julian/vim-textobj-variable-segment'
 
@@ -547,26 +548,25 @@ inoremap <C-f> <C-d>
 " Movement: operator-pending mode
 " ============================================================================
 
+xnoremap p i(
+xnoremap b i{
+xnoremap ( i(
+xnoremap { i{
+xnoremap [ i[
+xnoremap < i<
+xnoremap ` i"
+xnoremap ' i'
+xnoremap " i"
+
 onoremap p i(
 onoremap b i{
 onoremap ( i(
 onoremap { i{
 onoremap [ i[
 onoremap < i<
-onoremap q i'
 onoremap ` i"
 onoremap ' i'
 onoremap " i"
-onoremap np :<C-u>normal! f(lvi(<CR>
-onoremap n( :<C-u>normal! f(lvi(<CR>
-onoremap n{ :<C-u>normal! f{lvi{<CR>
-onoremap nb :<C-u>normal! fblvib<CR>
-onoremap n[ :<C-u>normal! f[lvi[<CR>
-onoremap n< :<C-u>normal! f<lvi<<CR>
-onoremap nq :<C-u>normal! f'lvi'<CR>
-onoremap n` :<C-u>normal! f"lvi"<CR>
-onoremap n' :<C-u>normal! f'lvi'<CR>
-onoremap n" :<C-u>normal! f"lvi"<CR>
 
 
 " ============================================================================
