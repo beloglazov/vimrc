@@ -161,8 +161,6 @@ Plug 'Julian/vim-textobj-brace'
 Plug 'kana/vim-textobj-function'
 
 Plug 'beloglazov/vim-textobj-quotes'
-xmap q iq
-omap q iq
 
 Plug 'Julian/vim-textobj-variable-segment'
 
@@ -370,6 +368,8 @@ function! YRRunAfterMaps()
     nnoremap Y :<C-U>YRYankCount 'y$'<CR>
     xmap j <Plug>(textobj-brace-i)
     omap j <Plug>(textobj-brace-i)
+    xmap q <Plug>(textobj-quote-i)
+    omap q <Plug>(textobj-quote-i)
     xmap k <Plug>(textobj-quote-i)
     omap k <Plug>(textobj-quote-i)
 endfunction
@@ -548,8 +548,6 @@ inoremap <C-f> <C-d>
 " Movement: operator-pending mode
 " ============================================================================
 
-xnoremap p i(
-xnoremap b i{
 xnoremap ( i(
 xnoremap { i{
 xnoremap [ i[
@@ -558,8 +556,6 @@ xnoremap ` i"
 xnoremap ' i'
 xnoremap " i"
 
-onoremap p i(
-onoremap b i{
 onoremap ( i(
 onoremap { i{
 onoremap [ i[
