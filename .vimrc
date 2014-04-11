@@ -162,6 +162,8 @@ Plug 'kana/vim-textobj-function'
 
 Plug 'beloglazov/vim-textobj-quotes'
 
+Plug 'beloglazov/vim-textobj-punctuation'
+
 Plug 'Julian/vim-textobj-variable-segment'
 
 Plug 'michaeljsmith/vim-indent-object'
@@ -370,8 +372,10 @@ function! YRRunAfterMaps()
     omap j <Plug>(textobj-brace-i)
     xmap q <Plug>(textobj-quote-i)
     omap q <Plug>(textobj-quote-i)
-    xmap k <Plug>(textobj-quote-i)
-    omap k <Plug>(textobj-quote-i)
+    xmap k <plug>(textobj-quote-i)
+    omap k <plug>(textobj-quote-i)
+    xmap u <plug>(textobj-punctuation-i)
+    omap u <plug>(textobj-punctuation-i)
 endfunction
 
 
@@ -612,7 +616,10 @@ nmap crf m`T<Space>~``
 noremap K ciw
 
 " Change current WORD - kill
-noremap J ciW
+" noremap J ciW
+
+" Change until punctuation
+nmap J ciu
 
 " Join lines
 nnoremap <leader>J J
