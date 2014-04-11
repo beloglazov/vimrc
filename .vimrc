@@ -104,6 +104,7 @@ Plug 'tpope/vim-unimpaired'
 " ----------------------------------------------------------------------------
 
 Plug 'justinmk/vim-sneak'
+let g:sneak#use_ic_scs = 1
 let g:sneak#f_reset = 0
 let g:sneak#t_reset = 0
 let g:sneak#streak = 0
