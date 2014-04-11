@@ -411,6 +411,13 @@ endif
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc nested source %
 
+" Disable paste mode when leaving insert mode
+autocmd! InsertLeave * set nopaste
+
+" Paste without manual switching
+map <F5> :set paste<CR>i
+imap <F5> <Esc>:set paste<CR>i<Right>
+
 " Allow unsaved changes when opening another file
 set hidden
 
@@ -495,6 +502,9 @@ hi Error        ctermbg=NONE ctermfg=red
 hi SignColumn   ctermbg=233
 hi FoldColumn   ctermbg=233
 
+" Color in text files
+autocmd FileType text set filetype=markdown
+
 
 " ============================================================================
 " Movement: command-line
@@ -529,6 +539,9 @@ noremap l $
 " Search the current word in front / behind
 noremap ( #
 noremap ) *
+
+" Jump to the middle of the line
+nnoremap <silent> gm :call cursor(0, len(getline('.'))/2)<CR>
 
 
 " ============================================================================
@@ -585,6 +598,9 @@ inoremap <C-q> <Esc>`^
 noremap <C-q> <Esc>
 vnoremap <C-q> <Esc>
 cmap <C-q> <C-c>
+
+" Easy redo
+nnoremap U <C-r>
 
 " Reflow a paragraph
 vmap <leader>q gq
