@@ -413,9 +413,12 @@ autocmd! bufwritepost .vimrc nested source %
 
 " Allow unsaved changes when opening another file
 set hidden
-"
+
 " Disable swap files
-set noswapfile
+" set noswapfile
+
+" Swap file directory
+set dir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " Search with smart case
 set ignorecase
