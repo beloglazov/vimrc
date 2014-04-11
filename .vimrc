@@ -553,6 +553,7 @@ inoremap <C-f> <C-d>
 " Movement: operator-pending mode
 " ============================================================================
 
+xnoremap p ip
 xnoremap ( i(
 xnoremap { i{
 xnoremap [ i[
@@ -561,6 +562,7 @@ xnoremap ` i"
 xnoremap ' i'
 xnoremap " i"
 
+onoremap p ip
 onoremap ( i(
 onoremap { i{
 onoremap [ i[
@@ -599,7 +601,10 @@ map <leader>a ggVG
 nmap gcd yyPgcc
 
 " Duplicate a region and comment the first copy
-vmap gcd ypgvgc<Esc>
+vmap gcc gc<Esc>
+
+" Duplicate a region and comment the first copy
+vmap gcd yPgvgc<Esc>
 
 " Indent everything
 noremap <leader>I gg=G<C-o><C-o>
