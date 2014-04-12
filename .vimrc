@@ -42,7 +42,7 @@ let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<esc>', '<c-q>'] }
 let g:ctrlp_max_height = 30
 noremap <leader>o :CtrlP<CR>
 noremap <leader>O :CtrlPCurFile<CR>
-noremap <leader>b :CtrlPBuffer<CR>
+noremap <leader>j :CtrlPBuffer<CR>
 noremap <leader>r :CtrlPMRUFiles<CR>
 noremap <leader>; :CtrlPLine<CR>
 
@@ -675,8 +675,8 @@ noremap <Left> <C-w>h
 noremap <Right> <C-w>l
 
 " Jump between buffers
-noremap <silent> <leader>j :bnext<CR>
-noremap <silent> <leader>k :bprev<CR>
+" noremap <silent> <leader>j :bnext<CR>
+" noremap <silent> <leader>k :bprev<CR>
 noremap <silent> <leader>l :b#<CR>
 
 " Delete the current buffer
