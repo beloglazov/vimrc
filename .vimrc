@@ -98,6 +98,14 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-unimpaired'
 
+Plug 'zirrostig/vim-schlepp'
+let g:Schlepp#reindent = 1
+vmap <up>    <Plug>SchleppUp
+vmap <down>  <Plug>SchleppDown
+vmap <left>  <Plug>SchleppLeft
+vmap <right> <Plug>SchleppRight
+vmap D <Plug>SchleppDup
+
 
 " ----------------------------------------------------------------------------
 " Movement
@@ -675,10 +683,10 @@ noremap Q :quit<CR>
 
 " Jump between windows
 noremap <leader>w <C-w>w
-noremap <Up> <C-w>k
-noremap <Down> <C-w>j
-noremap <Left> <C-w>h
-noremap <Right> <C-w>l
+" noremap <Up> <C-w>k
+" noremap <Down> <C-w>j
+" noremap <Left> <C-w>h
+" noremap <Right> <C-w>l
 
 " Jump between buffers
 " noremap <silent> <leader>j :bnext<CR>
