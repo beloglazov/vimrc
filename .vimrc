@@ -475,6 +475,9 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+" Disable folding
+set nofoldenable
+
 " Move backup files
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
