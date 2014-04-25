@@ -96,7 +96,9 @@ Plug 'tpope/vim-repeat'
 
 Plug 'tpope/vim-surround'
 
-Plug 'tpope/vim-unimpaired'
+" Plug 'tpope/vim-unimpaired'
+" nunmap =p
+" nunmap =P
 
 Plug 'zirrostig/vim-schlepp'
 let g:Schlepp#reindent = 1
@@ -178,6 +180,8 @@ Plug 'Julian/vim-textobj-variable-segment'
 Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'terryma/vim-expand-region'
+map = <Plug>(expand_region_expand)
+map - <Plug>(expand_region_shrink)
 
 
 " ----------------------------------------------------------------------------
@@ -282,6 +286,11 @@ let g:haskell_tags_generator = 'fast-tags'
 Plug 'Shougo/vimproc.vim'
 
 Plug 'eagletmt/ghcmod-vim'
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+hi ghcmodType ctermbg=yellow
+let g:ghcmod_type_highlight = 'ghcmodType'
+map <silent> + :GhcModType<CR>
+map <silent> _ :GhcModTypeClear<CR>
 
 Plug 'eagletmt/neco-ghc'
 let g:necoghc_enable_detailed_browse = 1
