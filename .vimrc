@@ -280,6 +280,7 @@ autocmd FileType fish compiler fish
 " ----------------------------------------------------------------------------
 
 Plug 'dag/vim2hs'
+let g:haskell_conceal = 0
 let g:haskell_autotags = 1
 let g:haskell_tags_generator = 'fast-tags'
 
