@@ -82,7 +82,7 @@ let g:UltiSnipsListSnippets='<C-z>'
 Plug 'vim-scripts/visualrepeat'
 
 Plug 'Valloric/YouCompleteMe'
-inoremap <C-@> <C-X><C-L>
+" inoremap <C-@> <C-X><C-L>
 inoremap <S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
 let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
