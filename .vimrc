@@ -98,7 +98,7 @@ Plug 'tpope/vim-repeat'
 
 Plug 'tpope/vim-surround'
 
-" Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-unimpaired'
 " nunmap =p
 " nunmap =P
 
@@ -231,6 +231,7 @@ Plug 'mhinz/vim-startify'
 
 Plug 'milkypostman/vim-togglelist'
 let g:toggle_list_no_mappings = 1
+nnoremap <script> <silent> <f9>  :call ToggleLocationList()<CR>
 nnoremap <script> <silent> <f10> :call ToggleQuickfixList()<CR>
 
 
@@ -730,17 +731,25 @@ nnoremap <leader>vs :source $MYVIMRC<CR>i<Esc>
 " Java key bindings (eclim)
 " ============================================================================
 
+let g:EclimLoggingDisabled = 1
+let g:EclimJavaSearchMapping = 0
+let g:EclimJavaSearchSingleResult = 'edit'
+let g:EclimJavaHierarchyDefaultAction = 'edit'
+let g:EclimJavaCallHierarchyDefaultAction = 'edit'
+autocmd FileType java nnoremap <localleader>l :lfirst<CR>
 autocmd FileType java nnoremap <localleader>o :CtrlP src<CR>
 autocmd FileType java nnoremap <localleader>m :CtrlP src/main<CR>
 autocmd FileType java nnoremap <localleader>t :CtrlP src/test<CR>
 autocmd FileType java nnoremap <localleader>j :CtrlP src/main/java<CR>
 autocmd FileType java nnoremap <silent> <buffer> <localleader>i :JavaImport<CR>
-autocmd FileType java nnoremap <silent> <buffer> <localleader>O :JavaImportOrganize<CR>
+autocmd FileType java nnoremap <silent> <buffer> <localleader>I :JavaImportOrganize<CR>
 autocmd FileType java nnoremap <silent> <buffer> <localleader>d :JavaDocSearch -x declarations<CR>
 autocmd FileType java nnoremap <silent> <buffer> <localleader>s :JavaSearchContext<CR>
-autocmd FileType java nnoremap <silent> <buffer> <localleader>c :JavaCorrect<CR>
-autocmd FileType java nnoremap <silent> <buffer> <localleader>f :%JavaFormat<CR>
+autocmd FileType java nnoremap <silent> <buffer> <localleader>q :JavaCorrect<CR>
+autocmd FileType java nnoremap <silent> <buffer> <leader>i :JavaFormat<CR>
+autocmd FileType java nnoremap <silent> <buffer> <leader>I :%JavaFormat<CR>
 autocmd FileType java nnoremap <silent> <buffer> <localleader>h :JavaHierarchy<CR>
+autocmd FileType java nnoremap <silent> <buffer> <localleader>c :JavaCallHierarchy<CR>
 autocmd FileType java nnoremap <buffer> <localleader>rr :JavaRename<space>
 autocmd FileType java nnoremap <buffer> <localleader>rm :JavaMove<space>
 autocmd FileType java nnoremap <silent> <buffer> <localleader>ru :RefactorUndo<CR>
