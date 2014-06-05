@@ -113,6 +113,8 @@ vmap <left>  <Plug>SchleppLeft
 vmap <right> <Plug>SchleppRight
 vmap D <Plug>SchleppDup
 
+Plug 'godlygeek/tabular'
+
 
 " ----------------------------------------------------------------------------
 " Movement
@@ -289,6 +291,7 @@ Plug 'dag/vim2hs'
 let g:haskell_conceal = 0
 let g:haskell_autotags = 1
 let g:haskell_tags_generator = 'fast-tags'
+autocmd FileType haskell nnoremap <localleader>t= :Tabularize haskell_bindings<CR>
 
 Plug 'Shougo/vimproc.vim'
 
