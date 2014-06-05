@@ -51,8 +51,10 @@ let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['.*\.pyc$']
 noremap <silent> <f1> :NERDTreeToggle<CR>
 noremap <silent> <f2> :NERDTreeFind<CR>
-autocmd FileType nerdtree silent! nunmap <buffer> <C-j>
-autocmd FileType nerdtree silent! nunmap <buffer> <C-k>
+autocmd FileType nerdtree silent! noremap <buffer> j <down>
+autocmd FileType nerdtree silent! noremap <buffer> k <up>
+autocmd FileType nerdtree silent! map <buffer> h x
+autocmd FileType nerdtree silent! map <buffer> l o
 
 Plug 'tpope/vim-fugitive'
 noremap <silent> <f12> :Gstatus<CR>
