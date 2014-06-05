@@ -49,6 +49,7 @@ noremap <leader>; :CtrlPLine<CR>
 Plug 'scrooloose/nerdtree'
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['.*\.pyc$']
+let NERDTreeQuitOnOpen = 1
 noremap <silent> <f1> :NERDTreeToggle<CR>
 noremap <silent> <f2> :NERDTreeFind<CR>
 autocmd FileType nerdtree silent! noremap <buffer> j <down>
