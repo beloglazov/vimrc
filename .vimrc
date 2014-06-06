@@ -114,6 +114,7 @@ vmap <right> <Plug>SchleppRight
 vmap D <Plug>SchleppDup
 
 Plug 'godlygeek/tabular'
+nmap <localleader>t= :Tabularize assignment<CR>
 
 
 " ----------------------------------------------------------------------------
