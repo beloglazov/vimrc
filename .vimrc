@@ -249,12 +249,12 @@ Plug 'dyng/ctrlsf.vim'
 let g:ctrlsf_selected_line_hl = 'p'
 nnoremap <F4> :CtrlSF<space>
 
-Plug 'ivyl/vim-bling'
-let g:bling_no_map = 1
-let g:bling_time = 50
-let g:bling_count = 1
-nnoremap <silent> n nzz:call BlingHighight()<CR>
-nnoremap <silent> N Nzz:call BlingHighight()<CR>
+" Plug 'ivyl/vim-bling'
+" let g:bling_no_map = 1
+" let g:bling_time = 50
+" let g:bling_count = 1
+" nnoremap <silent> n nzz:call BlingHighight()<CR>
+" nnoremap <silent> N Nzz:call BlingHighight()<CR>
 
 Plug 'tacahiroy/ctrlp-funky'
 let g:ctrlp_extensions = ['funky']
