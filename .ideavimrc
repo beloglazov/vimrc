@@ -1,0 +1,93 @@
+set incsearch
+set gdefault
+set smartcase
+
+
+" ============================================================================
+" Movement: normal mode
+" ============================================================================
+
+" Scroll screen with the cursor
+noremap <C-j> gj<C-e>
+noremap <C-k> gk<C-y>
+
+" Left / right
+noremap <C-h> h
+noremap <C-l> l
+
+" Home row beginning / end of line
+noremap h ^
+noremap l $
+
+" Search the current word in front / behind
+noremap ( #
+noremap ) *
+
+" Next / previous match
+noremap j ;
+noremap k ,
+
+
+" ============================================================================
+" Movement: insert mode
+" ============================================================================
+
+" Basic
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-l> <Right>
+inoremap <C-h> <Left>
+
+
+" ============================================================================
+" Editing
+" ============================================================================
+
+" Escape
+inoremap jk <Esc>`^
+inoremap <C-q> <Esc>`^
+noremap <C-q> <Esc>
+vnoremap <C-q> <Esc>
+cmap <C-q> <C-c>
+
+" Easy redo
+nnoremap U <C-r>
+
+" Moving blocks of text in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" Select all text
+map <Space>a ggVG
+
+" Copy until the end of the line
+noremap Y$
+
+" Indent everything
+noremap <Space>I ggvG=
+
+" Indent selection in visual mode
+vnoremap <Space>i =
+
+" Indent the current line
+noremap <Space>i v=
+
+" Change current word - kill
+noremap K ciw
+
+" Change in double quotes
+noremap J ci"
+
+" Join lines
+nnoremap <Space>J J
+
+
+" ============================================================================
+" Editor control
+" ============================================================================
+
+" Enter the command-line mode
+noremap <CR> :
+
+" Very magic regex search by default
+" nnoremap / /\v
