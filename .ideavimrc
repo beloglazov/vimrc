@@ -1,10 +1,9 @@
-set incsearch
 set gdefault
-set smartcase
+set ignorecase
 
 
 " ============================================================================
-" Movement: normal mode
+" Movement
 " ============================================================================
 
 " Scroll screen with the cursor
@@ -15,29 +14,23 @@ noremap <C-k> gk<C-y>
 noremap <C-h> h
 noremap <C-l> l
 
-" Home row beginning / end of line
-noremap h ^
-noremap l $
-
-" Search the current word in front / behind
-noremap ( #
-noremap ) *
-
-" Next / previous match
-noremap j ;
-noremap k ,
-
-
-" ============================================================================
-" Movement: insert mode
-" ============================================================================
-
-" Basic
+" Insert mode
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 inoremap <C-l> <Right>
 inoremap <C-h> <Left>
 
+" Next / previous match
+noremap j ;
+noremap k ,
+
+" Home row beginning / end of line
+noremap h ^
+noremap l $
+
+" Home row beginning / end of line
+noremap H #
+noremap L *
 
 " ============================================================================
 " Editing
@@ -50,9 +43,6 @@ noremap <C-q> <Esc>
 vnoremap <C-q> <Esc>
 cmap <C-q> <C-c>
 
-" Easy redo
-nnoremap U <C-r>
-
 " Moving blocks of text in visual mode
 vnoremap < <gv
 vnoremap > >gv
@@ -61,7 +51,7 @@ vnoremap > >gv
 map <Space>a ggVG
 
 " Copy until the end of the line
-noremap Y$
+noremap Y y$
 
 " Indent everything
 noremap <Space>I ggvG=
@@ -88,6 +78,3 @@ nnoremap <Space>J J
 
 " Enter the command-line mode
 noremap <CR> :
-
-" Very magic regex search by default
-" nnoremap / /\v
