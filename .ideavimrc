@@ -20,17 +20,17 @@ inoremap <C-j> <Down>
 inoremap <C-l> <Right>
 inoremap <C-h> <Left>
 
-" Next / previous match
-noremap j ;
-noremap k ,
+" Previous / next match
+noremap H ,
+noremap L ;
 
 " Home row beginning / end of line
 noremap h ^
 noremap l $
 
-" Home row beginning / end of line
-noremap H #
-noremap L *
+" Previous / next word
+noremap k #
+noremap j *
 
 " ============================================================================
 " Editing
