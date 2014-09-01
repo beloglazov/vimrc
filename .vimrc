@@ -492,7 +492,7 @@ set completeopt=longest,menuone
 set wildmenu
 set wildmode=longest:full,full
 set wildcharm=<Tab>
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.pyc,*/.ropeproject/*,*.egg,*.egg-info/*,*build/*,*bin/*,*target/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.pyc,*/.ropeproject/*,*/.idea/*,*.egg,*.egg-info/*,*build/*,*bin/*,*target/*
 
 " Scrolling by blocks
 let &scrolljump=&lines / 2 - 1
