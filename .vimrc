@@ -522,10 +522,10 @@ set spellfile=~/.vim/spell.en.add
 nmap <leader>= 1z=
 
 " Yaml
-autocmd BufReadPre *.yaml setlocal nowrap
-autocmd BufReadPre *.yaml setlocal tabstop=2
-autocmd BufReadPre *.yaml setlocal softtabstop=2
-autocmd BufReadPre *.yaml setlocal shiftwidth=2
+autocmd BufReadPre *.yaml,*.yml setlocal nowrap
+autocmd BufReadPre *.yaml,*.yml setlocal tabstop=2
+autocmd BufReadPre *.yaml,*.yml setlocal softtabstop=2
+autocmd BufReadPre *.yaml,*.yml setlocal shiftwidth=2
 
 " Enable C-Tab
 imap <Esc>[27;5;9~ <C-Tab>
