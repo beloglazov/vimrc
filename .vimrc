@@ -394,8 +394,6 @@ autocmd FileType scala setlocal tabstop=2
 autocmd FileType scala setlocal softtabstop=2
 autocmd FileType scala setlocal shiftwidth=2
 
-Plug 'tfnico/vim-gradle'
-
 
 " ----------------------------------------------------------------------------
 " Other
@@ -421,6 +419,8 @@ function! YRRunAfterMaps()
     xmap u <plug>(textobj-punctuation-i)
     omap u <plug>(textobj-punctuation-i)
 endfunction
+
+Plug 'chase/vim-ansible-yaml'
 
 
 call plug#end()
