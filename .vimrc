@@ -249,18 +249,22 @@ Plug 'dyng/ctrlsf.vim'
 let g:ctrlsf_selected_line_hl = 'p'
 nnoremap <F4> :CtrlSF<space>
 
-Plug 'ivyl/vim-bling'
-let g:bling_no_map = 1
-let g:bling_time = 50
-let g:bling_count = 1
-nnoremap <silent> n nzz:call BlingHighight()<CR>
-nnoremap <silent> N Nzz:call BlingHighight()<CR>
+" Plug 'ivyl/vim-bling'
+" let g:bling_no_map = 1
+" let g:bling_time = 50
+" let g:bling_count = 1
+" nnoremap <silent> n nzz:call BlingHighight()<CR>
+" nnoremap <silent> N Nzz:call BlingHighight()<CR>
 
 Plug 'tacahiroy/ctrlp-funky'
 let g:ctrlp_extensions = ['funky']
 nnoremap <leader>f :CtrlPFunky<CR>
 " Narrow the list down with a word under cursor
 nnoremap <leader>F :execute 'CtrlPFunky ' . expand('<cword>')<CR>
+
+Plug 'junegunn/vim-pseudocl'
+
+Plug 'junegunn/vim-oblique'
 
 
 " ----------------------------------------------------------------------------
@@ -732,7 +736,7 @@ noremap <leader>d :bdelete<CR>
 noremap <leader>e :e <Tab>
 
 " Very magic regex search by default
-nnoremap / /\v
+" nnoremap / /\v
 
 " Open .vimrc
 nnoremap <leader>ve :split $MYVIMRC<CR>
