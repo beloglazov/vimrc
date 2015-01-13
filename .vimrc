@@ -156,10 +156,10 @@ omap T <Plug>Sneak_T
 " ----------------------------------------------------------------------------
 
 Plug 'AndrewRadev/sideways.vim'
-nmap <silent> H :SidewaysJumpLeft<CR>
-nmap <silent> L :SidewaysJumpRight<CR>
-nmap <silent> <leader>H :SidewaysLeft<CR>
-nmap <silent> <leader>L :SidewaysRight<CR>
+nmap <silent> ( :SidewaysJumpLeft<CR>
+nmap <silent> ) :SidewaysJumpRight<CR>
+nmap <silent> <leader>( :SidewaysLeft<CR>
+nmap <silent> <leader>) :SidewaysRight<CR>
 omap aa <Plug>SidewaysArgumentTextobjA
 xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
@@ -587,8 +587,8 @@ noremap h ^
 noremap l $
 
 " Search the current word in front / behind
-noremap ( #
-noremap ) *
+noremap H #
+noremap L *
 
 " Jump to the middle of the line
 nnoremap <silent> gm :call cursor(0, len(getline('.'))/2)<CR>
