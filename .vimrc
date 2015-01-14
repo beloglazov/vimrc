@@ -127,12 +127,12 @@ let g:sneak#f_reset = 0
 let g:sneak#t_reset = 0
 let g:sneak#streak = 0
 let g:sneak#s_next = 0
-nmap j <Plug>SneakNext
-nmap k <Plug>SneakPrevious
-xmap j <Plug>VSneakNext
-xmap k <Plug>VSneakPrevious
-omap j <Plug>SneakNext
-omap k <Plug>SneakPrevious
+nmap L <Plug>SneakNext
+nmap H <Plug>SneakPrevious
+xmap L <Plug>VSneakNext
+xmap H <Plug>VSneakPrevious
+omap L <Plug>SneakNext
+omap H <Plug>SneakPrevious
 map ; <Plug>(SneakStreak)
 map ' <Plug>(SneakStreakBackward)
 " replace 'f' with inclusive 1-char Sneak
@@ -587,8 +587,8 @@ noremap h ^
 noremap l $
 
 " Search the current word in front / behind
-noremap H #
-noremap L *
+noremap j *
+noremap k #
 
 " Jump to the middle of the line
 nnoremap <silent> gm :call cursor(0, len(getline('.'))/2)<CR>
