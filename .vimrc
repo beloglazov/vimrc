@@ -566,9 +566,6 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" Force saving that requires root permissions
-cmap w!! %!sudo tee > /dev/null %
-
 
 " ============================================================================
 " Movement: normal mode
@@ -743,6 +740,12 @@ nnoremap <leader>ve :split $MYVIMRC<CR>
 
 " Source .vimrc
 nnoremap <leader>vs :source $MYVIMRC<CR>i<Esc>
+
+" Force saving that requires root permissions
+cmap w!! %!sudo tee > /dev/null %
+
+" Format JSON
+map <localleader>j :%!python -m json.tool<CR>
 
 
 " ============================================================================
