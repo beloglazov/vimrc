@@ -344,6 +344,8 @@ autocmd BufReadPre *.tex vmap <buffer> <F7> <Plug>LatexEnvWrapSelection
 
 Plug 'tpope/vim-markdown'
 
+Plug 'greyblake/vim-preview'
+
 
 " ----------------------------------------------------------------------------
 " Python
