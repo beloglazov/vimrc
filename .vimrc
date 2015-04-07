@@ -134,7 +134,7 @@ xmap H <Plug>VSneakPrevious
 omap L <Plug>SneakNext
 omap H <Plug>SneakPrevious
 map ; <Plug>(SneakStreak)
-map : <Plug>(SneakStreakBackward)
+map ' <Plug>(SneakStreakBackward)
 " replace 'f' with inclusive 1-char Sneak
 nmap f <Plug>Sneak_f
 nmap F <Plug>Sneak_F
