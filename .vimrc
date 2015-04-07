@@ -134,7 +134,7 @@ xmap H <Plug>VSneakPrevious
 omap L <Plug>SneakNext
 omap H <Plug>SneakPrevious
 map ; <Plug>(SneakStreak)
-map ' <Plug>(SneakStreakBackward)
+map : <Plug>(SneakStreakBackward)
 " replace 'f' with inclusive 1-char Sneak
 nmap f <Plug>Sneak_f
 nmap F <Plug>Sneak_F
@@ -333,6 +333,7 @@ autocmd BufReadPre *.tex setlocal expandtab
 autocmd BufReadPre *.tex nmap <leader>t :LatexTOCToggle<CR>
 autocmd BufReadPre *.tex imap <buffer> [[ \begin{
 autocmd BufReadPre *.tex imap <buffer> ]] <Plug>LatexCloseCurEnv
+autocmd BufReadPre *.tex nmap <buffer> <F1> :Latexmk<CR>
 autocmd BufReadPre *.tex nmap <buffer> <F5> <Plug>LatexChangeEnv
 autocmd BufReadPre *.tex vmap <buffer> <F6> <Plug>LatexWrapSelection
 autocmd BufReadPre *.tex vmap <buffer> <F7> <Plug>LatexEnvWrapSelection
