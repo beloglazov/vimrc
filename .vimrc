@@ -46,6 +46,8 @@ noremap <leader>j :CtrlPBuffer<CR>
 noremap <leader>r :CtrlPMRUFiles<CR>
 noremap <leader>; :CtrlPLine<CR>
 
+Plug 'pbrisbin/vim-rename-file'
+
 Plug 'scrooloose/nerdtree'
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['.*\.pyc$']
